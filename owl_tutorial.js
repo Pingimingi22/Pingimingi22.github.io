@@ -124,7 +124,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
       function assert(check, msg) {
         if (!check) throw msg + new Error().stack;
       }
-  Module['FS_createPath']("/", "test_images", true, true);
+  Module['FS_createPath']("/", "assets", true, true);
 
           /** @constructor */
           function DataRequest(start, end, audio) {
@@ -197,7 +197,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
     }
   
    }
-   loadPackage({"files": [{"filename": "/test_images/hello_world.png", "start": 0, "end": 19024, "audio": 0}], "remote_package_size": 19024, "package_uuid": "eb971e08-3c5f-4945-9e5d-bcf67dd708e4"});
+   loadPackage({"files": [{"filename": "/assets/owl.png", "start": 0, "end": 44741, "audio": 0}], "remote_package_size": 44741, "package_uuid": "10b12257-1fb9-49fb-8bd1-4b6153907b47"});
   
   })();
   
