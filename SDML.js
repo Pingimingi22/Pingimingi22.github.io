@@ -204,7 +204,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
     }
   
    }
-   loadPackage({"files": [{"filename": "/test_images/hello_world.png", "start": 0, "end": 5979, "audio": 0}, {"filename": "/test_images/ship.png", "start": 5979, "end": 6813, "audio": 0}], "remote_package_size": 6813, "package_uuid": "7d9b6978-7936-4d58-84f0-586d41956b9b"});
+   loadPackage({"files": [{"filename": "/test_images/hello_world.png", "start": 0, "end": 5979, "audio": 0}, {"filename": "/test_images/ship.png", "start": 5979, "end": 6813, "audio": 0}], "remote_package_size": 6813, "package_uuid": "a86b62de-7985-4885-97e0-d25b2c07c1af"});
   
   })();
   
@@ -8688,6 +8688,16 @@ var ASM_CONSTS = {
       return socketId;
     }
 
+  function _emscripten_websocket_send_binary(socketId, binaryData, dataLength) {
+      var socket = WS.sockets[socketId];
+      if (!socket) {
+        return -3;
+      }
+  
+      socket.send(HEAPU8.subarray((binaryData), (binaryData+dataLength)));
+      return 0;
+    }
+
   function _emscripten_websocket_send_utf8_text(socketId, textData) {
       var socket = WS.sockets[socketId];
       if (!socket) {
@@ -9676,6 +9686,7 @@ var asmLibraryArg = {
   "emscripten_websocket_get_ready_state": _emscripten_websocket_get_ready_state,
   "emscripten_websocket_is_supported": _emscripten_websocket_is_supported,
   "emscripten_websocket_new": _emscripten_websocket_new,
+  "emscripten_websocket_send_binary": _emscripten_websocket_send_binary,
   "emscripten_websocket_send_utf8_text": _emscripten_websocket_send_utf8_text,
   "emscripten_websocket_set_onclose_callback_on_thread": _emscripten_websocket_set_onclose_callback_on_thread,
   "emscripten_websocket_set_onerror_callback_on_thread": _emscripten_websocket_set_onerror_callback_on_thread,
