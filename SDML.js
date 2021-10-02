@@ -204,7 +204,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
     }
   
    }
-   loadPackage({"files": [{"filename": "/test_images/hello_world.png", "start": 0, "end": 5979, "audio": 0}, {"filename": "/test_images/ship.png", "start": 5979, "end": 6813, "audio": 0}], "remote_package_size": 6813, "package_uuid": "6c4db072-b04d-493e-a8f2-a24294bb7114"});
+   loadPackage({"files": [{"filename": "/test_images/hello_world.png", "start": 0, "end": 5979, "audio": 0}, {"filename": "/test_images/ship.png", "start": 5979, "end": 6813, "audio": 0}], "remote_package_size": 6813, "package_uuid": "0961a334-4b7d-45dd-9788-d02393c5f5e5"});
   
   })();
   
