@@ -204,7 +204,7 @@ var Module = typeof Module !== 'undefined' ? Module : {};
     }
   
    }
-   loadPackage({"files": [{"filename": "/test_images/hello_world.png", "start": 0, "end": 5979, "audio": 0}, {"filename": "/test_images/ship.png", "start": 5979, "end": 6813, "audio": 0}], "remote_package_size": 6813, "package_uuid": "b89a35b4-5652-4483-ba85-eed285a5bae1"});
+   loadPackage({"files": [{"filename": "/test_images/hello_world.png", "start": 0, "end": 5979, "audio": 0}, {"filename": "/test_images/ship.png", "start": 5979, "end": 6813, "audio": 0}], "remote_package_size": 6813, "package_uuid": "843bcbdb-fff2-47fc-b26d-1c104bfb3ac6"});
   
   })();
   
@@ -9947,6 +9947,7 @@ var asmLibraryArg = {
   "invoke_iiiiiiiiiii": invoke_iiiiiiiiiii,
   "invoke_iiiiiiiiiiii": invoke_iiiiiiiiiiii,
   "invoke_iiiiiiiiiiiii": invoke_iiiiiiiiiiiii,
+  "invoke_iiiiij": invoke_iiiiij,
   "invoke_j": invoke_j,
   "invoke_jiiii": invoke_jiiii,
   "invoke_v": invoke_v,
@@ -10030,13 +10031,13 @@ var dynCall_ji = Module["dynCall_ji"] = createExportWrapper("dynCall_ji");
 var dynCall_j = Module["dynCall_j"] = createExportWrapper("dynCall_j");
 
 /** @type {function(...*):?} */
+var dynCall_iiiiij = Module["dynCall_iiiiij"] = createExportWrapper("dynCall_iiiiij");
+
+/** @type {function(...*):?} */
 var dynCall_viijii = Module["dynCall_viijii"] = createExportWrapper("dynCall_viijii");
 
 /** @type {function(...*):?} */
 var dynCall_jiiii = Module["dynCall_jiiii"] = createExportWrapper("dynCall_jiiii");
-
-/** @type {function(...*):?} */
-var dynCall_iiiiij = Module["dynCall_iiiiij"] = createExportWrapper("dynCall_iiiiij");
 
 /** @type {function(...*):?} */
 var dynCall_iiiiijj = Module["dynCall_iiiiijj"] = createExportWrapper("dynCall_iiiiijj");
@@ -10313,6 +10314,17 @@ function invoke_j(index) {
   var sp = stackSave();
   try {
     return dynCall_j(index);
+  } catch(e) {
+    stackRestore(sp);
+    if (e !== e+0 && e !== 'longjmp') throw e;
+    _setThrew(1, 0);
+  }
+}
+
+function invoke_iiiiij(index,a1,a2,a3,a4,a5,a6) {
+  var sp = stackSave();
+  try {
+    return dynCall_iiiiij(index,a1,a2,a3,a4,a5,a6);
   } catch(e) {
     stackRestore(sp);
     if (e !== e+0 && e !== 'longjmp') throw e;
