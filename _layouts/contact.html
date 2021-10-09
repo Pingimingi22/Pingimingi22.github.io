@@ -5,7 +5,7 @@
     }
     body
     {
-        text-align: center;
+        /*text-align: center;*/
         padding-left: 25%;
         padding-right: 25%;
         
@@ -19,6 +19,12 @@
         padding-left: 2%;
     
     }
+
+    .contact-list
+    {
+        text-align: left;
+        list-style-position: inside;
+    }
     </style>
 
 
@@ -30,10 +36,16 @@
 
 <body>{{page.content}}</body>
 
+<div class=contact-list>
+<ul>
+    <li></li><h3>
+        Github: <a href = "https://github.com/Pingimingi22">{{page.github}}</a>
+    </h3></li>
+    <li></li><h3>Email: {{page.email}}</h3></li>
+</ul>
+</div>
 
 </div>
 
 
 {% include footer.html %}
-
-
