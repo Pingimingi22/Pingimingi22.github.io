@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html style="background-color: whitesmoke">
+<style>
+
+h1
+{
+    text-align: center;
+
+}
+
+body
+{
+    text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.inline-div
+{
+    display: inline;
+    justify-content: center;
+    padding-right: 2%;
+    padding-left: 2%;
+
+}
+
+.centreBlock
+{
+    background-color:white;
+    min-height: 100vh;
+}
+
+</style>
+
+
+
+<head>
+    <div class=centreBlock>
+    <br>
+    <h1>Daniel Hadzajlic</h1>
+    <br>
+
+    {%for thing in site.pages%}
+    {%if thing.title == "Home"%}
+    {%endif%}
+    {%endfor%}
+
+
+    <div class="inline-div">
+        <h3 style="display:inline;"><a href={{site.url}}>Home</a></h3>
+    </div>
+    {% for thing in site.pages %}
+    {%if thing.title and thing.title != "Home"%}
+    <div class="inline-div">
+    <h3 style="display:inline;"><a href="{{thing.url}}">{{thing.title}}</a></h3>
+    </div>
+    {%endif%}
+    {%endfor%}
+
+    <hr>
+    <br>
+
+
