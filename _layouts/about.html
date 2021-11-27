@@ -9,7 +9,6 @@
         padding-left: 25%;
         padding-right: 25%;
         
-    
     }
     .inline-div
     {
@@ -19,6 +18,11 @@
         padding-left: 2%;
     
     }
+    .about-summary
+    {
+        color: black;
+        font-size: 15px;
+    }
     </style>
 
 
@@ -26,15 +30,18 @@
 {% include header.html %}
 
 
+<section class="content">
 
-
-<h2 style="text-align: center;">{{page.title}}</h2>
+<h2 class="content-title">{{page.title}}</h2>
 <hr>
-
+<p class="about-summary">
 <body>{{page.content}}</body>
+</p>
 
+<!--/div>-->
 
-</div>
-
+<br>
+<br>
+<br>
 
 {% include footer.html %}
