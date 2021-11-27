@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color: whitesmoke">
+<html style="background-color: black">
 <style>
 h1
 {
@@ -8,8 +8,8 @@ h1
 body
 {
     text-align: center;
-    padding-left: 25%;
-    padding-right: 25%;
+    /*padding-left: 25%;
+    padding-right: 25%;*/
     
 
 }
@@ -21,6 +21,91 @@ body
     padding-left: 2%;
 
 }
+
+
+
+.content
+{
+    
+    padding: 50px 75px;
+    position:relative;
+    background: url(/assets/scroll_backdrop.png) repeat-y top center;
+    font-size: 11px;
+    margin:0;
+}
+
+.content-title
+{
+    color: black;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-article
+{
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    width: 540px;
+
+
+}
+
+.project-details
+{
+    float: right;
+    width: 350px;
+    text-align: left;
+
+}
+
+.screenshot-figure
+{
+    float: left;
+    min-height: 130px;
+    width: 175px;
+    
+
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.project-article_figure-img
+{
+    border: none;
+    outline: none;
+    color: black;
+    max-height: 175px;
+    max-width: 175px;
+
+}
+
+.project-article-title
+{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    margin-top: 0;
+    color: #7B4F17;
+    font-weight: bold;
+}
+
+.project-article-summary
+{
+    color: black;
+    font-size: 1.3em;
+
+}
+
+
+
 </style>
 
 
@@ -40,40 +125,75 @@ body
     {%endfor%}
     -->
 
-
-    
     <body>
+        <div class="information-box">
         Hi, I'm Daniel Hadzajlic, a games programmer with a particular interest in network programming. I'm currently completing my Advanced Diploma of Professional Game Development at AIE.
         Below are some of my projects.
-    </body>    
+        </div>
+    </body>  
+
+    <section class="content">  
     </head>
-    <body>
-        <h2>Projects</h2>
+    <body >
+        <h2 class="content-title">Projects</h2>
         <hr>
-        <h3>DanNet</h3>
-            <body>DanNet is a networking library that I created during my time at AIE. It's built upon Winsock2 and only uses UDP sockets. It features reliable UDP packets and simulated
+        
+        <article class = project-article>
+            <figure class = screenshot-figure>
+     
+                    <img class="project-article_figure-img" src="assets/test-screenshot.png" alt="test">
+                
+
+            </figure>
+            <div class="project-details">
+        <h3 class="project-article-title">DanNet</h3>
+            <p class="project-article-summary">DanNet is a networking library that I created during my time at AIE. It's built upon Winsock2 and only uses UDP sockets. It features reliable UDP packets and simulated
                 lag. 
                 <br>
                 <br>
                 Check out the GitHub page at: <a href="https://github.com/Pingimingi22/DanNet">DanNetGitHub</a>
-            </body>
-        <h3>Codename: Pariah</h3>
-        <body>I am currently a part of a team of 11 people working on Codename: Pariah for our end of year project. The game is a fast paced FPS inspired by the Wolfenstein games and Doom. My work has been primarily 
+            </p>
+            </div>
+        </article>
+
+        <article class = project-article>
+            <figure class = screenshot-figure>
+                <img class="project-article_figure-img" src="assets/test-screenshot.png" alt="test">
+            </figure>
+            <div class="project-details">
+        <h3 class="project-article-title">Codename: Pariah</h3>
+        <p class="project-article-summary">I am currently a part of a team of 11 people working on Codename: Pariah for our end of year project. The game is a fast paced FPS inspired by the Wolfenstein games and Doom. My work has been primarily 
             creating the FPS controller and ground combat mechanics. A download link will be available soon.
-        </body>
-        <h3>GMTK 2021 - The Mountain Brothers</h3>
-        <body>For this years GMTK, I decided to participate and I created.. an interesting game. While the design choices might be questionable, I am proud of what I was able
+        </p>
+    </div>
+    </article>
+
+    <article class="project-article">
+        <figure class = screenshot-figure>
+            <img class="project-article_figure-img" src="assets/test-screenshot.png" alt="test">
+        </figure>
+        <div class="project-details">
+        <h3 class="project-article-title">GMTK 2021 - The Mountain Brothers</h3>
+        <p class="project-article-summary">For this years GMTK, I decided to participate and I created.. an interesting game. While the design choices might be questionable, I am proud of what I was able
             to achieve in less than 2 days worth of work.
             <br>
             <br>
             Check it out at Itch.io: <a href="https://pingimingi.itch.io/the-mountain-brothers">TheMountainBrothersItchIo</a>
             <br>
-            Or check out the GitHub page: <a href="https://github.com/Pingimingi22/GMTK-2021">TheMountainBrothersGitHub</a>
+            Or at the GitHub page: <a href="https://github.com/Pingimingi22/GMTK-2021">TheMountainBrothersGitHub</a>
 
-        </body>
+        </p>
+        </div>
+        </article>
 
-        <h3>Prototype Multiplayer Turn Based Strategy Game</h3>
-        <body>
+
+        <article class="project-article">
+            <figure class = screenshot-figure>
+                <img class="project-article_figure-img" src="assets/test-screenshot.png" alt="test">
+            </figure>
+        <div class="project-details">
+        <h3 class="project-article-title">Prototype Multiplayer Turn Based Strategy Game</h3>
+        <p class="project-article-summary">
             Okay, so the title is a work in-progress but anyways, this is a project that I've been working on for the past couple of weeks in my spare time. I don't have a lot of time to
             dedicate to it right now, and it's not complete yet, but I think its worth showing off the progress so far.
             <br>
@@ -86,10 +206,13 @@ body
             Youtube dev log: <a href="https://youtu.be/qTe8Ex3hluk">TurnedBasedStrategyDevLog001</a>
 
             
-        </body>
-        
+        </p>
+        </div>
+        </article>
+    
     </body>  
-    </div>
+    <!--</div>-->
+    <!--</div>-->
     {% include footer.html %}
 </header>
 
