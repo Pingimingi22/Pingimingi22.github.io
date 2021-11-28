@@ -170,7 +170,7 @@ a
         <h3 style="display:inline;"><a href={{site.url}}>Home</a></h3>
     </div>
     {% for thing in site.pages %}
-    {%if thing.title and thing.title != "Home" and thing.title != "Resume"%}
+    {%if thing.title and thing.title != "Home" and thing.title != "Resume" and thing.title !="Interactive Circum-Circle"%}
     <div class="inline-div">
     <h3 style="display:inline;"><a href="{{thing.url}}">{{thing.title}}</a></h3>
     </div>
