@@ -5,11 +5,9 @@ permalink: /about
 ---
 
 
-Hi, I'm Daniel Hadzajlic. I'm currently completing my Advanced Diploma of Professional Game Development at AIE. Right now my favourite language is C++
-	and although I enjoy every aspect of games programming, I'm particularly interested in network programming for multiplayer games.
+Hi, I'm Daniel Hadzajlic. I'm currently working as a junior programmer. My favourite languages are C++ and C# and although I enjoy every aspect of programming, I'm particularly interested in network
+programming.
 	
-	I love playing video games and currently I'm into Neverwinter Nights 1.
-
 <br>
 <br>
 <br>
