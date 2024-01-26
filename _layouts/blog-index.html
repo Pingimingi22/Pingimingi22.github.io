@@ -1,0 +1,65 @@
+<style>
+    h1
+    {
+        text-align: center;
+    }
+    body
+    {
+        text-align: center;
+        /*padding-left: 25%;
+        padding-right: 25%;*/
+        
+    }
+    .inline-div
+    {
+        display: inline;
+        justify-content: center;
+        padding-right: 2%;
+        padding-left: 2%;
+    
+    }
+    .about-summary
+    {
+        color: black;
+        font-size: 15px;
+        text-align: left;
+
+        display: block;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px 0;
+        position: relative;
+        width: 540px;
+    }
+    </style>
+
+
+<header>
+{% include header.html %}
+
+
+<section class="content" style="font-size: 18px; text-align: left;">
+
+<h2 class="content-title">{{page.title}}</h2>
+<hr>
+<p class="about-summary">
+
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            {{post.date | date: "%d/%m/%Y:"}}
+            <b><u><a href="{{post.url}}" style="color: black">{{post.title}}</a></u></b>
+        </li>
+        {% endfor %}
+    </ul>
+
+<body>{{page.content}}</body>
+</p>
+
+<!--/div>-->
+
+<br>
+
+
+
+{% include footer.html %}

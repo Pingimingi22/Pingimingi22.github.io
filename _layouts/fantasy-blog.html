@@ -1,0 +1,41 @@
+<style>
+    .about-summary
+    {
+        color: black;
+        font-size: 15px;
+        text-align: left;
+
+        display: block;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px 0;
+        position: relative;
+        width: 540px;
+    }
+    .post
+    {
+        font-size: 15px;
+    }
+    </style>
+
+
+<header>
+{% include header.html %}
+
+
+<section class="content" style="font-size: 15px; text-align: left;" >
+
+<h2 class="content-title">{{page.title}}</h2>
+<hr>
+<p class="about-summary">
+    
+{{page.content}}
+</p>
+
+<!--/div>-->
+
+
+<br>
+
+
+{% include footer.html %}

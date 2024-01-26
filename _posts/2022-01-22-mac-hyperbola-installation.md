@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: fantasy-blog
 title: Installing Hyperbola GNU/Linux-Libre on a 2008-ish MacBook
 ---
 
