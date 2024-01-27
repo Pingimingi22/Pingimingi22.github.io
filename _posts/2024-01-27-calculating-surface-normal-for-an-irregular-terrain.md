@@ -33,12 +33,13 @@ I like to think of this algorithm as grabbing a bunch of black pixels and attemp
 ## The algorithm
 The way it works is:
 
-Grab the position of all the black (terrain) pixels
-Calculate the average position of them.
-Grab the position of all the white (void/sky) pixels
-Calculate the average position of these as well.
-The surface normal is the normalised vector from the average position of the black pixels to the average position of the white pixels.
+1. Grab the position of all the black (terrain) pixels
+2. Calculate the average position of them.
+3. Grab the position of all the white (void/sky) pixels
+4. Calculate the average position of these as well.
+5. The surface normal is the normalised vector from the average position of the black pixels to the average position of the white pixels.
 Done!
+
 Short and simple but very cool nonetheless.
 
 And here's what it looks like!
