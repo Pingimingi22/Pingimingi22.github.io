@@ -30,7 +30,7 @@ The gist of it is, imagine you have a 2D world made up of black and white pixels
 
 I like to think of this algorithm as grabbing a bunch of black pixels and attempting to calculate a surface normal for the group of pixels, rather than each individual pixel. This way we don't have to be stuck with a bunch of horizontal and vertical surface normals, and get one nice surface normal.
 
-The algorithm
+## The algorithm
 The way it works is:
 
 Grab the position of all the black (terrain) pixels
